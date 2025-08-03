@@ -1,0 +1,18 @@
+# FILE: .github/workflows/frontend-deploy.yml
+# This workflow automatically deploys your React app to Netlify on push to the &#39;main&#39; branch.
+
+name: Deploy Frontend to Netlify
+
+on:
+push:
+branches:
+\- main
+paths:
+\- 'frontend/\*\*' \# Only run when frontend code changes
+
+jobs:
+build-and-deploy:
+runs-on: ubuntu-latest
+steps:
+\- name: Checkout repository
+uses: actions/checkout@v3

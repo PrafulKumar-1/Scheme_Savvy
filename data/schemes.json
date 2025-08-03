@@ -1,0 +1,67 @@
+
+[
+  {
+    "scheme_id": "pmskn01",
+    "scheme_name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "ministry": "Ministry of Agriculture & Farmers Welfare",
+    "description": "Provides income support of ₹6,000 per year to all landholding farmer families.",
+    "benefits": "₹6,000 per year in three equal installments.",
+    "category": "Farmer",
+    "eligibility_rules": {
+      "min_age": 18,
+      "states": ["All"],
+      "occupation": ["Farmer"]
+    },
+    "official_link": "https://pmkisan.gov.in/",
+    "required_documents": [
+      "Aadhaar Card",
+      "Landholding Papers",
+      "Bank Account Details"
+    ]
+  },
+  {
+    "scheme_id": "gjmysy01",
+    "scheme_name": "Mukhya Mantri Yuva Swavalamban Yojana (MYSY)",
+    "ministry": "Education Department, Government of Gujarat",
+    "description": "Provides financial assistance for higher education to meritorious and needy students of Gujarat.",
+    "benefits": "Tuition fee assistance, accommodation support, and help for books/equipment.",
+    "category": "Student",
+    "eligibility_rules": {
+      "min_age": 17,
+      "max_age": 25,
+      "states": ["Gujarat"],
+      "occupation": ["Student"],
+      "income_lakhs_max": 6
+    },
+    "official_link": "https://mysy.guj.nic.in/frm_home.aspx",
+    "required_documents": [
+      "Domicile Certificate of Gujarat",
+      "10th & 12th Standard Marksheet (with required percentile)",
+      "Family Income Certificate",
+      "Admission Letter from College/University",
+      "Bank Account Details"
+    ]
+  },
+  {
+    "scheme_id": "gjvdy01",
+    "scheme_name": "Vahli Dikri Yojana",
+    "ministry": "Women & Child Development, Government of Gujarat",
+    "description": "A scheme to improve the girl child ratio and promote their education.",
+    "benefits": "Financial assistance at various stages: ₹4,000 in 1st grade, ₹6,000 in 9th grade, and ₹1,00,000 at age 18 for higher education or marriage.",
+    "category": "General",
+    "eligibility_rules": {
+      "max_age": 1,
+      "states": ["Gujarat"],
+      "gender": "Female",
+      "income_lakhs_max": 2
+    },
+    "official_link": "https://wcd.gujarat.gov.in/vahli-dikri-yojana.html",
+    "required_documents": [
+      "Birth Certificate of the Girl Child",
+      "Domicile Certificate of Gujarat",
+      "Family Income Certificate (up to ₹2 lakh/year)",
+      "Parents' Identity Proof",
+      "Bank Account details of mother"
+    ]
+  }
+]
