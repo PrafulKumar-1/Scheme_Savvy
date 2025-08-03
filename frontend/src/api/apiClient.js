@@ -2,8 +2,11 @@
 
 import axios from 'axios';
 
-// Backend URL from environment variables for flexibility, with a fallback for local dev
-const API_URL = process.env.REACT_APP_API_URL || 'http://127.0.0.1:8000/api/v1';
+// Get the root URL of the backend. Fallback to localhost for local development.
+const API_ROOT = process.env.REACT_APP_API_URL || 'http://127.0.0.1:8000';
+
+// The specific versioned endpoint for your API
+const API_URL = `${API_ROOT}/api/v1`;
 
 const apiClient = axios.create({
   baseURL: API_URL,
@@ -17,7 +20,7 @@ const apiClient = axios.create({
  * @param {object} profileData - { age, state, occupation, income, gender }
  */
 export const findSchemes = (profileData) => {
-  // The endpoint path must match what's in your backend router
+  // The path here is now relative to `/api/v1`
   return apiClient.post('/schemes/find-schemes', profileData);
 };
 
