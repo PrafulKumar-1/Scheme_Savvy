@@ -1,6 +1,6 @@
 // FILE: frontend/src/features/2_SchemeDiscovery/SchemeResults.js
 import React from 'react';
-import { Box, Heading, VStack, Spinner, Alert, AlertIcon, Text } from '@chakra-ui/react';
+import { Heading, VStack, Spinner, Alert, AlertIcon, Text } from '@chakra-ui/react';
 import SchemeCard from '../../components/SchemeCard'; // Note the path change
 
 const SchemeResults = ({ isLoading, error, schemes }) => {

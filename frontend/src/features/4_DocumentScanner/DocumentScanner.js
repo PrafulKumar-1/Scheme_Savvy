@@ -1,7 +1,7 @@
 // Placeholder UI for the OCR feature.
 
 import React from 'react';
-import { Box, VStack, Icon, Heading, Text, Button } from '@chakra-ui/react';
+import { VStack, Icon, Heading, Text, Button } from '@chakra-ui/react';
 import { ViewIcon } from '@chakra-ui/icons';
 
 const DocumentScanner = () => {

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Box, Heading, Text, VStack, SimpleGrid, Icon, useColorModeValue } from '@chakra-ui/react';
-import { ChatIcon, ViewIcon, TimeIcon, AtSignIcon } from '@chakra-ui/icons';
+import { TimeIcon} from '@chakra-ui/icons';
 import DocumentScanner from '../features/4_DocumentScanner/DocumentScanner';
 import Chatbot from '../features/3_Chatbot/Chatbot';
 import CommunityForum from '../features/5_Community/CommunityForum';

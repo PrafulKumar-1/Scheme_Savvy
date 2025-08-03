@@ -1,7 +1,7 @@
 // Placeholder UI for the Community Q&A feature.
 
 import React from 'react';
-import { Box, VStack, Heading, Text, Divider, HStack, Avatar, Tag } from '@chakra-ui/react';
+import { VStack, Heading, Text, Divider, HStack, Avatar, Tag } from '@chakra-ui/react';
 
 const ForumPost = ({ name, tag, question }) => (
   <VStack align="start" w="100%" bg="white" p={4} borderRadius="md" borderWidth={1}> 
