@@ -1,24 +1,24 @@
-# FILE: .github/workflows/backend-deploy.yml
-# This workflow automatically deploys your FastAPI app to Render on push to the 'main' branch.
+# # FILE: .github/workflows/backend-deploy.yml
+# # This workflow automatically deploys your FastAPI app to Render on push to the 'main' branch.
 
-name: Deploy Backend to Render
+# name: Deploy Backend to Render
 
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'backend/**' # Only run when backend code changes
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths:
+#       - 'backend/**' # Only run when backend code changes
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v3
 
-      - name: Deploy to Render
-        uses: johnbeynon/render-deploy-action@v0.0.8
-        with:
-          service-id: ${{ secrets.RENDER_SERVICE_ID }}
-          api-key: ${{ secrets.RENDER_API_KEY }}
+#       - name: Deploy to Render
+#         uses: johnbeynon/render-deploy-action@v0.0.8
+#         with:
+#           service-id: ${{ secrets.RENDER_SERVICE_ID }}
+#           api-key: ${{ secrets.RENDER_API_KEY }}
