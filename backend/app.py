@@ -15,10 +15,14 @@ app = FastAPI(
     openapi_url=f"{settings.API_V1_STR}/openapi.json"
 )
 
-# --- CORS (Cross-Origin Resource Sharing) Middleware ---
+origins = [
+    "https://schemesavvy.netlify.app", # Your deployed frontend
+    "http://localhost:3000",           # Your local development frontend
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origins=origins, # Use the list here
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
